@@ -1,5 +1,5 @@
-# License3j Free License management for Java
-
+# License3j Free License management for Java 
+# (Downgraded to JAVA 8)
 License3j is a free and open source Java library to manage license files in Java programs that need technical
 license management enforcement support. A license file is a special configuration file, which is electronically
 signed. The library can create, sign such license files and can also check the signature and parameters
