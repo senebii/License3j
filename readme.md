@@ -1,5 +1,5 @@
-# License3j Free License management for Java
-
+# License3j Free License management for Java 
+## (Downgraded to JAVA 8. This is for programmers who can't get over with Java 8, the same way how people loved Windows 7)
 License3j is a free and open source Java library to manage license files in Java programs that need technical
 license management enforcement support. A license file is a special configuration file, which is electronically
 signed. The library can create, sign such license files and can also check the signature and parameters
@@ -32,7 +32,7 @@ https://verhas.github.io/License3j/
 ```java
 
 // load the license using a license reader
-try (var reader = new LicenseReader('license.bin')) {
+try (LicenseReader reader = new LicenseReader('license.bin')) {
     License license = reader.read();
 } catch (IOException e) {
     error("Error reading license file " + e);
@@ -108,7 +108,7 @@ license file, the validity of the license and it can also use the parameters enc
 To read a license from a file you need a `javax0.license3j.io.LicenseReader` object
 
 ```java
-try (var reader = new LicenseReader('license.bin')) {
+try (LicenseReader reader = new LicenseReader('license.bin')) {
     License license = reader.read();
 } catch (IOException e) {
     error("Error reading license file " + e);
